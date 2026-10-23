@@ -1,0 +1,41 @@
+style p
+{
+  font-size: 16px;
+  line-height: 1.5;
+  color: navy;
+}
+
+.note
+ {
+  font-size: 14px;
+  color: orangered;
+  margin-top: 10px;
+}
+#hero {
+  background-color: limegreen;
+  padding: 8px;
+  margin: 10px;
+  border:2px solid black;
+  text-align: justify;
+}
+h1 {
+  font-size: 36px;
+  color: navy;
+  text-align: center;
+}
+h2 {
+  font-size: 24px;
+  color: navy;
+  text-align: center;
+}
+h3 {
+  font-size: 20px;
+  color: navy;
+  text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(208, 234, 243);
+  margin: 0;
+  padding: 0;
+}
