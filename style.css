@@ -7,16 +7,26 @@ style p
 
 .note
  {
-  font-size: 14px;
+  background-color: #f5f7fb;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
   color: orangered;
-  margin-top: 10px;
+  margin-top: 8px;
 }
-#hero {
+.note-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center; /* center the nav */
+  align-items: center;     /* align vertically */
   background-color: limegreen;
   padding: 8px;
-  margin: 10px;
+  margin: 0 auto;
   border:5px solid black;
   text-align: justify;
+  max-width: 800px;
+  border-radius: 8px;
 }
 h1 {
   font-size: 36px;
@@ -62,5 +72,66 @@ nav ul {
 @media(min-width:768) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;   /* centers the links */
+  gap: 16px;                  /* spacing between links */
+  padding: 8px;
+  background-color: #e6f4f3;  
+}
+@media (max-width: 320px) {
+  body {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  #hero {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .note {
+    padding: 10px;
+  }
+
+  img {
+    width: 150px;
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .note-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .note {
+    width: 45%;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+
+  .note-container {
+    max-width: 1200px;
+  }
+
+  .note {
+    width: 30%;
   }
 }
