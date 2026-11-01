@@ -39,3 +39,28 @@ body {
   margin: 0;
   padding: 0;
 }
+
+footer {
+  padding: 16px 24px;
+  border-top: 1px solid #16233f;
+  margin-top: 32px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 0 24px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media(min-width:768) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
