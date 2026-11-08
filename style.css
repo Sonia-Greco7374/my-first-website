@@ -18,8 +18,8 @@ style p
   display: flex;
   flex-direction: column;
   gap: 16px;
-  justify-content: center; /* center the nav */
-  align-items: center;     /* align vertically */
+  justify-content: center; 
+  align-items: center;     
   background-color: limegreen;
   padding: 8px;
   margin: 0 auto;
@@ -69,7 +69,7 @@ nav ul {
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-@media(min-width:768) {
+@media(min-width:768px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -82,8 +82,8 @@ nav {
 
 #hero {
   display: flex;
-  justify-content: center;   /* centers the links */
-  gap: 16px;                  /* spacing between links */
+  justify-content: center;  
+  gap: 16px;                  
   padding: 8px;
   background-color: #e6f4f3;  
 }
@@ -112,6 +112,10 @@ nav {
     font-size: 16px;
   }
 
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
   .note-container {
     flex-direction: row;
     flex-wrap: wrap;
